@@ -1,0 +1,14 @@
+{
+  "name": "katacoda-oda-widget",
+  "version": "1.0.0",
+  "description": "Oracle Digital Assistant web widget web application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Red Expert Alliance",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
