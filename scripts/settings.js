@@ -75,10 +75,10 @@ const initSdk = (name) => {
          * In client auth enabled mode, 'clientAuthEnabled: true' must be passed
          */
         let chatWidgetSettings = {
-            URI: 'oda-eb9257fc3f4244a5b1db1d78ce0bccd7-da4.data.digitalassistant.oci.oraclecloud.com',                               // ODA URI, only the hostname part should be passed, without the https://
+            URI: 'ODA_URI',                             // ODA URI, only the hostname part should be passed, without the https://
             clientAuthEnabled: isClientAuthEnabled,     // Enables client auth enabled mode of connection if set true
-            channelId: '5038743e-ca1d-42d2-873f-c7e3d25b9321',                   // Channel ID, available in channel settings in ODA UI
-            //userId: '<userID>',                         // User ID, optional field to personalize user experience
+            channelId: '<channelID>',                   // Channel ID, available in channel settings in ODA UI
+            //userId: '<userID>',                       // User ID, optional field to personalize user experience
             enableAutocomplete: true,                   // Enables autocomplete suggestions on user input
             enableBotAudioResponse: true,               // Enables audio utterance of skill responses
             enableClearMessage: true,                   // Enables display of button to clear conversation
@@ -88,7 +88,7 @@ const initSdk = (name) => {
             showConnectionStatus: true,                 // Displays current connection status on the header
             i18n: {                                     // Provide translations for the strings used in the widget
                 en: {                                   // en locale, can be configured for any locale
-                    chatTitle: '<Chat Header Title>'    // Set title at chat header
+                    chatTitle: 'My Weather Skill!!'    // Set title at chat header
                 }
             },
             theme: WebSDK.THEME.REDWOOD_DARK            // Redwood dark theme. The default is THEME.DEFAULT, while older theme is available as THEME.CLASSIC
